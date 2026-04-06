@@ -1,0 +1,34 @@
+# uv
+.venv/
+.uv-cache/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# neovim
+*.swp
+*.swo
+.netrwhist
+
+# data (large files, fetched programmatically)
+data/
+
+# output
+output/
+
+# jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# os
+.DS_Store
+Thumbs.db
+
+# env
+.env
+*.env
