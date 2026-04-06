@@ -1,6 +1,7 @@
 # uv
 .venv/
 .uv-cache/
+cache/
 
 # python
 __pycache__/
