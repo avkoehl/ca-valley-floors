@@ -1,0 +1,22 @@
+[project]
+name = "ca-valley-floors"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "valley-floor[streamkit] @ git+https://github.com/avkoehl/valley-floor.git@main",
+    "pygeohydro",
+    "pynhd",
+    "py3dep",
+    "requests",
+    "rasterio",
+    "rioxarray",
+    "geopandas",
+    "xarray",
+    "tqdm",
+    "gitpython",
+    "numpy",
+    "pandas",
+]
+
+[tool.uv]
+package = false
