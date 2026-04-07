@@ -24,6 +24,7 @@ def download_dem(hucid, huc_boundary, ocean_mask, raw_dir):
     # buffer in 3310, reproject back to 4326 for download
     buffered = huc_boundary.to_crs("EPSG:3310").buffer(BUFFER_M)
     buffered = buffered.to_crs("EPSG:4326")
+    buffered = gpd.GeoDataFrame(geometry=buffered, crs="EPSG:4326")
 
     dem = download_3dep_dem(buffered, resolution=10, crs="EPSG:4326")
 
@@ -101,6 +102,9 @@ def main(data_dir: Path):
             else:
                 done += 1
         except Exception as e:
+            import traceback
+
+            traceback.print_exc()
             failed.append((hucid, str(e)))
             tqdm.write(f"FAILED {hucid}: {e}")
 

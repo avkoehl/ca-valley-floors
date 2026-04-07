@@ -2462,7 +2462,7 @@ wheels = [
 [[package]]
 name = "streamkit"
 version = "0.1.0"
-source = { git = "https://github.com/avkoehl/streamkit.git#34c0831b9dfee77c0d6e68aa511d5af4d72846a7" }
+source = { git = "https://github.com/avkoehl/streamkit.git#343e2f84cb59b651d9d5b9ff7870d3fada0bc9ae" }
 dependencies = [
     { name = "geopandas" },
     { name = "networkx" },
@@ -2563,7 +2563,7 @@ wheels = [
 [[package]]
 name = "valley-floor"
 version = "0.1.0"
-source = { git = "https://github.com/avkoehl/valley-floor.git?rev=main#ee7398d0be24eec03d59811bcdd81a598c422786" }
+source = { git = "https://github.com/avkoehl/valley-floor.git?rev=main#e99c411d020ca9960b752b06d729669709494ddb" }
 dependencies = [
     { name = "geopandas" },
     { name = "numpy" },
